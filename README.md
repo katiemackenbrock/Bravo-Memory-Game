@@ -38,6 +38,8 @@
 
 ### Wire Frames
 
+- [ ] Initial wire framing of game http://framebox.org/AnIcy
+
 ### MVP Goals
 
 ### Stretch Goals
