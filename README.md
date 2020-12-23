@@ -41,3 +41,5 @@
 ### MVP Goals
 
 ### Stretch Goals
+
+- [ ] Add audio with the housewives theme music, potentially a sound bite of a funny classic housewife line when the user wins/loses
