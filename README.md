@@ -34,7 +34,7 @@
 - [ ] Game should have a pop up alert (something funny with a classic HW image) to let the player know that they won/lost.
 
 ![](https://i.imgur.com/x9kUM1X.jpg)
-> Here is one picture of some of my favorite ladies :heart:
+> Here is one picture of some of my favorite ladies :heart: (minus you, Candiace...)
 
 ### Wire Frames
 
