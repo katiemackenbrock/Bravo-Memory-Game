@@ -25,6 +25,7 @@
 
 ### Logical steps for JavaScript (I think)  :shrug:
 
+- [ ] Create a table/grid inside a parent div, 4x4 
 - [ ] Create a div for each of the cards. inside each div should be 2 images, the front and the back. The back sides of each card will be the same.
 - [ ] The game must shuffle cards at the start (shuffle array?)
 - [ ] The game needs to know what to do with matched and unmatched cards (addEventListener, onClick?)
