@@ -25,25 +25,19 @@
 
 ### Logical steps for JavaScript (I think)  :shrug:
 
-- [ ] Create a table/grid inside a parent div, 4x4 
-- [ ] Create a div for each of the cards. inside each div should be 2 images, the front and the back. The back sides of each card will be the same.
 - [ ] The game must shuffle cards at the start (shuffle array?)
-- [ ] The game needs to know what to do with matched and unmatched cards (addEventListener, onClick?)
-- [ ] The game should count the # of moves the player makes and give a better score rating the lower the count. 
+- [ ] The game needs to know what to do with matched and unmatched cards
+- [ ] The game should count the amount of moves the player makes and give a better score rating the lower the count
 - [ ] In order to make the game "losable", I think I should make the goal to get it in under X amount of moves?
 - [ ] I'm going to try to create a timer that starts when the first card is clicked and stops when the game is won to track players' times (we know this is going to be a *super* in-demand and competitive game and people will want to beat their high scores...)
 - [ ] Do I want a reset button to clear the board/rating? I need to figure out how to make a reset button for just the clearBoard function I plan on writing but that still keeps track of the score if they want.
 - [ ] Game should have a pop up alert (something funny with a classic HW image) to let the player know that they won/lost.
 
 ![](https://i.imgur.com/x9kUM1X.jpg)
-> Here is one picture of some of my favorite ladies :heart: (minus you, Candiace...)
+> Here is one picture of some of my favorite ladies :heart:
 
 ### Wire Frames
-
-- [ ] Initial wire framing of game http://framebox.org/AnIcy
 
 ### MVP Goals
 
 ### Stretch Goals
-
-- [ ] Add audio with the housewives theme music, potentially a sound bite of a funny classic housewife line when the user wins/loses
