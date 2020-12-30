@@ -11,86 +11,87 @@
 <body>
     <div class="container">
         <header>
-        <h1>Find That Housewife!</h1>
-        <p><b>Instructions:</b><br>These damn housewives sure are hard to keep track of.<br>Take your shot at finding some of our favorite Bravolebrities by matching their cards until the game board is cleared.<br>Try to clear the board in under 25 moves! Press the reset button at any time.</p>
+        <h1>Find That Housewife!</h1> <hr>
+        <p class="instruct"><b>Instructions:</b></p>
+        <p>These damn housewives sure are hard to keep track of.<br>Take your shot at finding some of our favorite Bravolebrities by matching their cards until the game board is cleared.<br>Try to clear the board in under 25 moves! Press the reset button at any time.</p> <br> 
         <!-- using span instead of div because it's an inline element -->
         Moves: <span class="moves">0</span> <br><br>
         <div class="resetButton">
-            <input type="reset" value= "Reset"  onClick="window.location.reload()">
-        </div>
+            <input type="reset" value= "Reset Game"  onClick="window.location.reload()">
+        </div> <br> <br>
         </header>
     </div>
-    <div class="gameBoard">
+    <div class="gameBoard" id="gameBoard">
         <div class="card-wrap">
             <div class="card">
-                <img class="front" src="img/bethenny.png" alt="Bethenny">
-                <img class="back" src="img/card-top.png" alt="card-top">
+                <img class="front" id ="Bethenny" src="img/bethenny.png" alt="Bethenny">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>
             <div class="card">
-                <img class="front" src="img/denise.png" alt="Denise">
-                <img class="back" src="img/card-top.png" alt="card-top">
+                <img class="front" id="Denise" src="img/denise.png" alt="Denise">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>
             <div class="card">
-                <img class="front" src="img/karen.png" alt="Karen">
-                <img class="back" src="img/card-top.png" alt="card-top">
+                <img class="front" id="Karen" src="img/karen.png" alt="Karen">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>
             <div class="card">
-                <img class="front" src="img/lisa.png" alt="Lisa">
-                <img class="back" src="img/card-top.png" alt="card-top">
+                <img class="front" id="Lisa" src="img/lisa.png" alt="Lisa">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>
         </div>
         <div class="card-wrap">
             <div class="card">
-                <img class="front" src="img/monique.png" alt="Monique">
-                <img class="back" src="img/card-top.png" alt="card-top">
+                <img class="front" id="Monique" src="img/monique.png" alt="Monique">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>
             <div class="card">
-                <img class="front" src="img/porsha.png" alt="Porsha">
-                <img class="back" src="img/card-top.png" alt="card-top">
+                <img class="front" id="Porsha" src="img/porsha.png" alt="Porsha">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>
             <div class="card">
-                <img class="front" src="img/tamra.png" alt="Tamra">
-                <img class="back" src="img/card-top.png" alt="card-top">
+                <img class="front" id="Tamra" src="img/tamra.png" alt="Tamra">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>
             <div class="card">
-                <img class="front" src="img/teresa.png" alt="Teresa">
-                <img class="back" src="img/card-top.png" alt="card-top">
-            </div>
-        </div>
-        <div class="card-wrap">
-            <div class="card">
-                <img class="front" src="img/bethenny.png" alt="Bethenny">
-                <img class="back" src="img/card-top.png" alt="card-top">
-            </div>
-            <div class="card">
-                <img class="front" src="img/denise.png" alt="Denise">
-                <img class="back" src="img/card-top.png" alt="card-top">
-            </div>
-            <div class="card">
-                <img class="front" src="img/karen.png" alt="Karen">
-                <img class="back" src="img/card-top.png" alt="card-top">
-            </div>
-            <div class="card">
-                <img class="front" src="img/lisa.png" alt="Lisa">
-                <img class="back" src="img/card-top.png" alt="card-top">
+                <img class="front" id="Teresa" src="img/teresa.png" alt="Teresa">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>
         </div>
         <div class="card-wrap">
             <div class="card">
-                <img class="front" src="img/monique.png" alt="Monique">
-                <img class="back" src="img/card-top.png" alt="card-top">
+                <img class="front" id="Bethenny" src="img/bethenny.png" alt="Bethenny">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>
             <div class="card">
-                <img class="front" src="img/porsha.png" alt="Porsha">
-                <img class="back" src="img/card-top.png" alt="card-top">
+                <img class="front" id="Denise" src="img/denise.png" alt="Denise">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
+            </div>
+            <div class="card">
+                <img class="front" id="Karen" src="img/karen.png" alt="Karen">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
+            </div>
+            <div class="card">
+                <img class="front" id="Lisa" src="img/lisa.png" alt="Lisa">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
+            </div>
+        </div>
+        <div class="card-wrap">
+            <div class="card">
+                <img class="front" id="Monique" src="img/monique.png" alt="Monique">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
+            </div>
+            <div class="card">
+                <img class="front" id="Porsha" src="img/porsha.png" alt="Porsha">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>
                 <div class="card">
-                    <img class="front" src="img/tamra.png" alt="Tamra">
-                    <img class="back" src="img/card-top.png" alt="card-top">
+                    <img class="front" id="Tamra" src="img/tamra.png" alt="Tamra">
+                    <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>
             <div class="card">
-                <img class="front" src="img/teresa.png" alt="Teresa">
-                <img class="back" src="img/card-top.png" alt="card-top">
+                <img class="front" id="Teresa" src="img/teresa.png" alt="Teresa">
+                <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>  
         </div>
     </div>
