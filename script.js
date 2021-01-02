@@ -11,6 +11,50 @@ const cards = document.querySelectorAll('img');
 const imageFlip = document.querySelectorAll('.front')
 let imageSources = ["img/bethenny.png", "img/bethenny.png", "img/denise.png", "img/denise.png", "img/karen.png", "img/karen.png", "img/lisa.png", "img/lisa.png", "img/monique.png", "img/monique.png", "img/porsha.png", "img/porsha.png", "img/tamra.png", "img/tamra.png", "img/teresa.png", "img/teresa.png"]
 
+//reset button must shuffle deck, flip cards to 'back' class, reset moves counter
+gameSetUp()
+function gameSetUp() {
+    shuffle()
+    // clearBoard()
+}
+
+// function clearBoard( {
+//     let front = document.getElementsByClassName('front')
+    
+// })
+
+document.getElementById('resetBtn').addEventListener('click', ()=> {location.reload()})
+function shuffle() {
+    console.log('clicked shuffle');
+    console.log(imageFlip);
+    imageSources.sort(()=> {
+        let random = Math.random() > .5
+        if (random) {
+            return -1
+        } else {
+            return 1
+        }
+        console.log(random);
+    });
+    console.log(imageSources);
+    imageFlip.forEach((image, index)=> {
+        image.src = imageSources[index]
+    })
+}
+
+
+// function unFlip() {
+//     this.classList.toggle('back');
+//     if (currentChoice.length === 1) {
+//         currentChoice.push(this)
+//     } else {
+//         currentChoice.push(this)
+//     }
+//     console.log(currentChoice);
+// }
+
+
+
 function flipCard() {
     this.classList.toggle('back');
     console.log("flipped");
@@ -70,6 +114,7 @@ function checkForMatch() {
 //use id not classname
 let moves = 0;
 let counter = document.getElementById('moves')
+// let matches = 0;
 console.log(typeof counter);
 //moves counter (class 'moves') count each click pair (2 clicks for one move) as a move
 function moveCounter(){    
@@ -93,26 +138,6 @@ function closeModal(modal) {
 
 let modalNoMatch = document.getElementById('noMatchModal')
 console.log(modalNoMatch);
-
-document.getElementById('resetBtn').addEventListener('click', ()=> {shuffle()})
-function shuffle() {
-    console.log('clicked shuffle');
-    console.log(imageFlip);
-    imageSources.sort(()=> {
-        let random = Math.random() > .5
-        if (random) {
-            return -1
-        } else {
-            return 1
-        }
-        console.log(random);
-    });
-    console.log(imageSources);
-    imageFlip.forEach((image, index)=> {
-        image.src = imageSources[index]
-    })
-}
-
 
 
 // let Bethenny = document.getElementById('Bethenny');
