@@ -8,6 +8,8 @@
 let currentChoice = [];
 
 const cards = document.querySelectorAll('img');
+const imageFlip = document.querySelectorAll('.front')
+let imageSources = ["img/bethenny.png", "img/bethenny.png", "img/denise.png", "img/denise.png", "img/karen.png", "img/karen.png", "img/lisa.png", "img/lisa.png", "img/monique.png", "img/monique.png", "img/porsha.png", "img/porsha.png", "img/tamra.png", "img/tamra.png", "img/teresa.png", "img/teresa.png"]
 
 function flipCard() {
     this.classList.toggle('back');
@@ -33,12 +35,16 @@ function checkForMatch() {
         // alert('Congrats, we have a match!')
         // currentChoice[0].setAttribute('src', Bravo-Memory-Game/img/andy.png)
         // currentChoice[1].setAttribute('src', Bravo-Memory-Game/img/andy.png)
+        openModal(modalMatch)
+        setTimeout(()=> {closeModal(modalMatch)}, 1000)
     } else {
         currentChoice[0].classList.toggle('back')
         currentChoice[1].classList.toggle('back')
         // alert('Try again, boo boo.')
         // currentChoice[0].setAttribute('src', Bravo-Memory-Game/img/andy.png)
         // currentChoice[1].setAttribute('src', Bravo-Memory-Game/img/andy.png)
+        openModal(modalNoMatch)
+        setTimeout(()=> {closeModal(modalNoMatch)}, 1000)
     }
     currentChoice = [];
     moveCounter()
@@ -50,6 +56,11 @@ function checkForMatch() {
 // const gameBoard = document.getElementById('gameBoard')
 // function clearBoard(){
 //     if gameBoard
+// }
+
+// shuffleGame() {
+//     cards = shuffle(cards);
+
 // }
 
 //make a checkForMatch () function 
@@ -72,8 +83,35 @@ function moveCounter(){
 //     cards = shuffle(cards)
 // }
 
+let modalMatch = document.getElementById('matchModal')
+function openModal(modal) {
+    modal.style.display = "block"
+}
+function closeModal(modal) {
+    modal.style.display = "none"
+}
 
+let modalNoMatch = document.getElementById('noMatchModal')
+console.log(modalNoMatch);
 
+document.getElementById('resetBtn').addEventListener('click', ()=> {shuffle()})
+function shuffle() {
+    console.log('clicked shuffle');
+    console.log(imageFlip);
+    imageSources.sort(()=> {
+        let random = Math.random() > .5
+        if (random) {
+            return -1
+        } else {
+            return 1
+        }
+        console.log(random);
+    });
+    console.log(imageSources);
+    imageFlip.forEach((image, index)=> {
+        image.src = imageSources[index]
+    })
+}
 
 
 

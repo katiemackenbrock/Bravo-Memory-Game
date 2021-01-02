@@ -11,13 +11,13 @@
 <body>
     <div class="container">
         <header>
-        <h1>Find That Housewife!</h1> <hr>
+        <h1>Find That Housewife!</h1> 
         <p class="instruct"><b>Instructions:</b></p>
         <p>These damn housewives sure are hard to keep track of.<br>Take your shot at finding some of our favorite Bravolebrities by matching their cards until the game board is cleared.<br>Try to clear the board in under 15 moves! Press the reset button at any time.</p> <br> 
         <!-- using span instead of div because it's an inline element -->
         <p id="move">Moves:</p> <span id="moves">0</span> <br><br>
         <div class="resetButton">
-            <input type="reset" value= "Reset"  onClick="window.location.reload()">
+            <button id="resetBtn">Reset Game</button>
         </div> <br> 
         </header>
     </div>
@@ -94,6 +94,13 @@
                 <img class="back" id="card-top" src="img/card-top.png" alt="card-top">
             </div>  
         </div>
+    </div>
+    <div id="matchModal" class="modal">
+        <p>Congrats, we have a match!</p>
+        <img class="modalImg" id="andy" src="img/andy.png">
+    </div>
+    <div id="noMatchModal" class="modal">
+        <p>Try again, boo boo.</p>
     </div>
 </body>
 </html>
