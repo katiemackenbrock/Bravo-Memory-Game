@@ -30,15 +30,27 @@ function checkForMatch() {
     // const firstPick = cards[0]
     if (currentChoice[0].parentNode.querySelector('.front').src === currentChoice[1].parentNode.querySelector('.front').src){
         console.log("They're the same");
+        // alert('Congrats, we have a match!')
+        // currentChoice[0].setAttribute('src', Bravo-Memory-Game/img/andy.png)
+        // currentChoice[1].setAttribute('src', Bravo-Memory-Game/img/andy.png)
     } else {
         currentChoice[0].classList.toggle('back')
         currentChoice[1].classList.toggle('back')
+        // alert('Try again, boo boo.')
+        // currentChoice[0].setAttribute('src', Bravo-Memory-Game/img/andy.png)
+        // currentChoice[1].setAttribute('src', Bravo-Memory-Game/img/andy.png)
     }
     currentChoice = [];
     moveCounter()
+    // clearBoard()
     
     console.log("checking for win");
 }
+
+// const gameBoard = document.getElementById('gameBoard')
+// function clearBoard(){
+//     if gameBoard
+// }
 
 //make a checkForMatch () function 
     //if match === true, keep displayCard, alert popup "you got a match"
@@ -53,6 +65,16 @@ function moveCounter(){
     moves++;    
     counter.innerHTML = moves;
 }
+
+//get reset button to shuffle the cards, onclick reload() function in html
+// document.getElementById('resetBtn')
+// reload(){
+//     cards = shuffle(cards)
+// }
+
+
+
+
 
 
 // let Bethenny = document.getElementById('Bethenny');

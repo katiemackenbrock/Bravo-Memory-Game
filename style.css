@@ -32,6 +32,22 @@ p.instruct {
     font-size: 45px;
 }
 
+#move {
+    font-size: 30px;
+}
+
+#moves {
+    font-size: 25px;
+}
+
+
+/* .resetButton {
+    height: 25px;
+    width: 50px;
+    display: flex;
+    justify-items: center;
+} */
+
 .gameBoard {
     width: 800px;
     height: 800px;
