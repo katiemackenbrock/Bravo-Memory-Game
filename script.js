@@ -42,7 +42,7 @@ function shuffle() {
     })
 }
 
-
+//tried to do somewhat of the opposite of what i did for flipCard() down below, but obvi did not work. figured out i need to move the shuffle function up to happen at the beginning of the game and change my reset button to reload the entire page. 
 // function unFlip() {
 //     this.classList.toggle('back');
 //     if (currentChoice.length === 1) {
@@ -79,6 +79,7 @@ function checkForMatch() {
         // alert('Congrats, we have a match!')
         // currentChoice[0].setAttribute('src', Bravo-Memory-Game/img/andy.png)
         // currentChoice[1].setAttribute('src', Bravo-Memory-Game/img/andy.png)
+        // incrementMatch()
         openModal(modalMatch)
         setTimeout(()=> {closeModal(modalMatch)}, 1000)
     } else {
@@ -114,7 +115,7 @@ function checkForMatch() {
 //use id not classname
 let moves = 0;
 let counter = document.getElementById('moves')
-// let matches = 0;
+let matches = 0;
 console.log(typeof counter);
 //moves counter (class 'moves') count each click pair (2 clicks for one move) as a move
 function moveCounter(){    
