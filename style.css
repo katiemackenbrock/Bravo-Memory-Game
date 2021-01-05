@@ -27,6 +27,7 @@ body {
 .container {
     width: 30%;
     height: 13%;
+    /* display: flex; */
 }
 
 
@@ -68,6 +69,8 @@ figcaption {
 
 #move {
     font-size: 30px;
+    /* display: flex;
+    flex: 2; */
 }
 
 #moves {
@@ -78,9 +81,13 @@ figcaption {
     display: inline-block;
 } */
 
-.scoring {
+/* .scoring  */
+
+.movesAndBtn {
+    /* display: inline-block; */
     display: flex;
     flex-direction: row;
+    justify-content: center;
     justify-content: space-between;
     margin-left: 120px;
 }
@@ -93,11 +100,15 @@ figcaption {
 } */
 
 #resetBtn {
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     color: white;
     background-color: rgb(93, 194, 184);
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border: 2px solid black;
+    /* display: flex;
+    flex: 1; */
 }
 
 .gameBoard {
@@ -155,7 +166,7 @@ figcaption {
     margin: 15% auto;
     padding: 20px;
     border: 1px rgb(93, 194, 184);
-    width: 80%;
+    width: 35%;
 }
 
 .modalContentNoMatch {
@@ -163,7 +174,7 @@ figcaption {
     margin: 15% auto;
     padding: 20px;
     border: 1px rgb(93, 194, 184);
-    width: 80%;
+    width: 60%;
 }
 
 .winModal {
@@ -171,7 +182,7 @@ figcaption {
     margin: 15% auto;
     padding: 20px;
     border: 1px rgb(93, 194, 184);
-    width: 80%;
+    width: 75%;
 }
 
 .modalText {
@@ -187,12 +198,32 @@ figcaption {
 .modalTextWin {
     margin: 0 auto;
     padding: 1.5rem;
-    width: 37%;
+    width: 100%;
     height: 3rem;
     line-height: 0rem;
     /* word-wrap: break-word; */
 }
 
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* focus triggered when the user clicks or taps on an element or selects it with the keyboard's Tab key. */
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 figure {
     margin: 0;
+}
+
+figcaption {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
 }
