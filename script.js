@@ -6,6 +6,7 @@
 // //making deck of cards into an array so my match function can loop through?
 // let card = document.getElementsByClassName("card");
 let currentChoice = [];
+let matchCount = 0;
 
 const cards = document.querySelectorAll('img');
 const imageFlip = document.querySelectorAll('.front')
@@ -14,6 +15,7 @@ let imageSources = ["img/bethenny.png", "img/bethenny.png", "img/denise.png", "i
 //reset button must shuffle deck, flip cards to 'back' class, reset moves counter
 gameSetUp()
 function gameSetUp() {
+    matchCount = 0;
     shuffle()
     // clearBoard()
 }
@@ -80,8 +82,11 @@ function checkForMatch() {
         // currentChoice[0].setAttribute('src', Bravo-Memory-Game/img/andy.png)
         // currentChoice[1].setAttribute('src', Bravo-Memory-Game/img/andy.png)
         // incrementMatch()
+        matchCount++
+        console.log(matchCount);
+        countMatch()
         openModal(modalMatch)
-        setTimeout(()=> {closeModal(modalMatch)}, 1000)
+        setTimeout(()=> {closeModal(modalMatch)}, 2000)
     } else {
         currentChoice[0].classList.toggle('back')
         currentChoice[1].classList.toggle('back')
@@ -89,7 +94,7 @@ function checkForMatch() {
         // currentChoice[0].setAttribute('src', Bravo-Memory-Game/img/andy.png)
         // currentChoice[1].setAttribute('src', Bravo-Memory-Game/img/andy.png)
         openModal(modalNoMatch)
-        setTimeout(()=> {closeModal(modalNoMatch)}, 1000)
+        setTimeout(()=> {closeModal(modalNoMatch)}, 2000)
     }
     currentChoice = [];
     moveCounter()
@@ -98,6 +103,14 @@ function checkForMatch() {
     console.log("checking for win");
 }
 
+function countMatch () {
+    if (matchCount === 8){
+        console.log("we have 8 matches");
+        openModal(modalWin)
+        setTimeout(()=> {closeModal(modalWin)}, 8000)
+        // gameSetUp()
+    }
+}
 // const gameBoard = document.getElementById('gameBoard')
 // function clearBoard(){
 //     if gameBoard
@@ -115,7 +128,7 @@ function checkForMatch() {
 //use id not classname
 let moves = 0;
 let counter = document.getElementById('moves')
-let matches = 0;
+// let matches = 0;
 console.log(typeof counter);
 //moves counter (class 'moves') count each click pair (2 clicks for one move) as a move
 function moveCounter(){    
@@ -139,6 +152,8 @@ function closeModal(modal) {
 
 let modalNoMatch = document.getElementById('noMatchModal')
 console.log(modalNoMatch);
+
+let modalWin = document.getElementById('winModal')
 
 
 // let Bethenny = document.getElementById('Bethenny');

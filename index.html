@@ -11,17 +11,36 @@
 <body>
     <div class="container">
         <header>
-        <h1>Find That Housewife!</h1> 
+        <h1><b>Find 👏 That 👏 Housewife!</b></h1><br>
+        <img class="headerImg" id="headerImg" src="img/lu.gif"> <br><br>
+        <p class="lu">Like The Countess says...<br>"Be cool. Don't be all, like, uncool."<br>Play the game.</p><br>
+        <hr> <br>
         <p class="instruct"><b>Instructions:</b></p>
-        <p>These damn housewives sure are hard to keep track of.<br>Take your shot at finding some of our favorite Bravolebrities by matching their cards until the game board is cleared.<br>Try to clear the board in under 15 moves! Press the reset button at any time.</p> <br> 
-        <!-- using span instead of div because it's an inline element -->
-        <p id="move">Moves:</p> <span id="moves">0</span> <br><br>
-        <div class="resetButton">
-            <button id="resetBtn">Reset Game</button>
-        </div> <br> 
-        </header>
-    </div>
-    <div class="gameBoard" id="gameBoard">
+        <p>These damn housewives sure are hard to keep track of.<br>Take your shot at finding some of our favorite Bravolebrities by matching their cards until the game board is cleared.<br>Try to clear the board in under 15 moves! Press the reset button at any time to shuffle the cards and reset your game.</p> <br>
+        <figure>
+            <figcaption>Transport yourself to the OG's of the OC while you play:</figcaption>
+            <audio 
+                controls
+                src="audio/RHOC.mp3" loop="true" autostart="true">
+                    <code>audio</code> 
+            </audio>
+        </figure><br>
+        <!-- <embed height="60" type="audio/midi" width="144" src="audio/RHOC.mp3" volume="60" loop="false" autostart="false" /> -->
+    </header>
+    <section class="scoring">
+        <!-- <ul class="crowns">
+            <li><img class="crownIcon" src="img/crownsmall.png"></li>
+            <li><img class="crownIcon" src="img/crownsmall.png"></li>
+            <li><img class="crownIcon" src="img/crownsmall.png"></li>
+        </ul> -->
+        <p id="move">Moves:</p> <span id="moves">0</span> <br> <br>
+            <div class="resetButton">
+                <button id="resetBtn">Reset Game</button>
+            </div> <br> 
+    </section>
+</div>
+<!-- using span instead of div because it's an inline element -->
+<div class="gameBoard" id="gameBoard">
         <div class="card-wrap">
             <div class="card">
                 <img class="front" id ="Bethenny" src="img/bethenny.png" alt="Bethenny">
@@ -97,14 +116,24 @@
     </div>
     <div id="matchModal" class="modal">
         <div class="modalContentMatch">
-        <p>Congrats, we have a match!</p>
-        <img class="modalImg" id="andy" src="img/andy.png">
+        <p class="modalText">Congrats, we have a match!</p>
+        <img class="modalImg" id="andy" src="img/andymatch.gif">
         </div>
     </div>
     <div id="noMatchModal" class="modal">
         <div class="modalContentNoMatch">
-        <p>Try again, boo boo.</p>
+        <p class="modalText">Sorry, boo boo. We checked you. Try again.</p>
+        <img class="modalImg2" id="sheree" src="img/shereeNoMatch.gif">
         </div>
     </div>
+    <div id="winModal" class="modal">
+        <div class="winModal">
+        <p class="modalTextWin">You did it! Now walk that runway with the confidence of our beloved Ramona Singer.</p>
+        <img class="modalImg3" id="ramona" src="img/ramona.gif">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
 </body>
 </html>

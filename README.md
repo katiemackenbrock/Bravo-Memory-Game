@@ -24,12 +24,12 @@
 
 ### Logical steps for JavaScript (I think)  :shrug:
 
-- [ ] The game must shuffle cards at the start (shuffle array?)
-- [ ] The game needs to know what to do with matched and unmatched cards using checkForMatch function
-- [ ] The game should count the amount of moves the player makes with a <span> moves counter
-- [ ] A reset button should reload the page (with location.reload inside an event listener)
-- [ ] Game should have a pop up alert/modal (something funny with a classic HW image) to let the player know that they picked a match, picked a mismatch
-- [ ] Game should have a function to check the winning conditions...if matches === 8, set up a new alert/modal to congratulate the player
+- [x] The game must shuffle cards at the start (shuffle array?)
+- [x] The game needs to know what to do with matched and unmatched cards using checkForMatch function
+- [x] The game should count the amount of moves the player makes with a <span> moves counter
+- [x] A reset button should reload the page (with location.reload inside an event listener)
+- [x] Game should have a pop up alert/modal (something funny with a classic HW image) to let the player know that they picked a match, picked a mismatch
+- [x] Game should have a function to check the winning conditions...if matches === 8, set up a new alert/modal to congratulate the player
 
 ![](https://i.imgur.com/x9kUM1X.jpg)
 > Here is one picture of some of my favorite ladies :heart: (Except for you, Candiace! #YouAskedForIt)
@@ -41,11 +41,11 @@
 ### MVP Goals
 - [x] Let's get a semi-attractive and fully functional game board in here
 - [x] Cards must be flippable. They must stay flipped over if they are a match, and automatically flip back if they are a mismatch
-- [ ] This game needs a win condition to be able to tell if all the cards have been matched with an alert/modal pop up
-- [ ] Let's make sure the modals look fly, too!
+- [x] This game needs a win condition to be able to tell if all the cards have been matched with an alert/modal pop up
+- [x] Let's make sure the modals look fly, too!
 
 ### Stretch Goals
 
-- [ ] Add audio clip of RHOSLC theme as background music
+- [ ] Add audio clip of RHOC theme as background music
 - [ ] Add a level 2 where you match the pre-plastic surgery face to the post-plastic surgery face
 - [ ] Add a rating/scoring system (eg. if you clear the board in under 15 moves, you get 3 crowns. Under 20 moves, 2 crowns. Under 25 moves, 1 crown.)

@@ -6,30 +6,64 @@
 
 body {
     height: 100vh;
-    /* display: flex; */
+    display: flex;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     background: rgba(93, 194, 184, .2)
 }
 
+/* .scoring {
+    /* text-align: left; */
+    /* margin-bottom: 10px;
+} */
+
+/* .scoring .crowns {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+} */ 
+
+.container {
+    width: 30%;
+    height: 13%;
+}
+
+
 header {
+    margin-top: 100px;
+    margin-left: 110px;
     text-align: center;
+}
+
+.headerImg {
+    width: 250px;
+    height: 150px;
 }
 
 h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 75px;
+    font-size: 30px;
 }
 
 p {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.5vh;
 }
 
 p.instruct {
     font-weight: bold;
-    font-size: 45px;
+    font-size: 3vh;
+}
+
+.lu {
+    font-size: 1.5vh;
+}
+
+figcaption {
+    font-size: 1.5vh;
 }
 
 #move {
@@ -40,6 +74,16 @@ p.instruct {
     font-size: 25px;
 }
 
+/* #move #moves {
+    display: inline-block;
+} */
+
+.scoring {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 120px;
+}
 
 /* .resetButton {
     height: 25px;
@@ -47,6 +91,14 @@ p.instruct {
     display: flex;
     justify-items: center;
 } */
+
+#resetBtn {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(93, 194, 184);
+    font-family: 'Poppins', sans-serif;
+}
 
 .gameBoard {
     width: 800px;
@@ -88,10 +140,59 @@ p.instruct {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
+    margin-top: 3.5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(93, 194, 184, .2);
+    background-color: transparent;
+}
+
+.modalContentMatch {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px rgb(93, 194, 184);
+    width: 80%;
+}
+
+.modalContentNoMatch {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px rgb(93, 194, 184);
+    width: 80%;
+}
+
+.winModal {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px rgb(93, 194, 184);
+    width: 80%;
+}
+
+.modalText {
+    margin: 0 auto;
+    padding: 1.5rem;
+    /* width: 37%; */
+    height: 3rem;
+    /* background-color: rgba(93, 194, 184, 0.9);
+    color: white; */
+    line-height: 0rem;
+}
+
+.modalTextWin {
+    margin: 0 auto;
+    padding: 1.5rem;
+    width: 37%;
+    height: 3rem;
+    line-height: 0rem;
+    /* word-wrap: break-word; */
+}
+
+figure {
+    margin: 0;
 }
