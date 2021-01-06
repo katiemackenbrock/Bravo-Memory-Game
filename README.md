@@ -1,4 +1,4 @@
-# Katie Mackenbrock Project 1
+# Katie Mackenbrock Project 1 - Find 👏 That 👏 Housewife!
 
 ###### tags: `game, project 1, memory game, bravo housewives`
 
@@ -46,6 +46,6 @@
 
 ### Stretch Goals
 
-- [ ] Add audio clip of RHOC theme as background music
+- [x] Add audio clip of RHOC theme as background music with option to pause
 - [ ] Add a level 2 where you match the pre-plastic surgery face to the post-plastic surgery face
 - [ ] Add a rating/scoring system (eg. if you clear the board in under 15 moves, you get 3 crowns. Under 20 moves, 2 crowns. Under 25 moves, 1 crown.)

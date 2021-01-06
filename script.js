@@ -5,6 +5,9 @@
 
 // //making deck of cards into an array so my match function can loop through?
 // let card = document.getElementsByClassName("card");
+window.onLoad = function() {
+    document.getElementById('audio').play()
+}
 let currentChoice = [];
 let matchCount = 0;
 

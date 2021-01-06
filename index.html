@@ -7,21 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <header>
         <h1><b>Find 👏 That 👏 Housewife!</b></h1><br>
-        <img class="headerImg" id="headerImg" src="img/lu.gif"> <br><br>
-        <p class="lu">Like The Countess says...<br>"Be cool. Don't be all, like, uncool."<br>Play the game.</p><br>
+        <img class="headerImg" id="headerImg" src="img/lu.gif"> <br>
+        <p class="lu">Like The Countess says...<br><i>"Be cool. Don't be all, like, uncool."</i><br>Play my 🤬 game!</p><br>
         <hr> <br>
         <p class="instruct"><b>Instructions:</b></p>
         <p>These damn housewives sure are hard to keep track of.<br>Take your shot at finding some of our favorite Bravolebrities by matching their cards until the game board is cleared.<br>Try to clear the board in under 15 moves! Press the reset button at any time to shuffle the cards and reset your game.</p> <br>
-        <figure>
-            <figcaption>Hit play to feel like one of the OG's from the OC while you find 👏 that 👏 housewife!</figcaption> <br>
-            <audio controls src="audio/RHOC.mp3"></audio>
-        </figure><br>
+        <hr> <br>
         <!-- <embed src="audio/RHOC.mp3" AutoPlay loop hidden> -->
             <!-- <div style="visibility:hidden">
                 <audio autoplay loop>
@@ -29,7 +27,7 @@
                 </audio> 
             </div> -->
         <!-- <embed height="60" type="audio/midi" width="144" src="audio/RHOC.mp3" volume="60" loop="false" autostart="false" /> -->
-        </header>
+        </header> <br>
     <section class="scoring">
         <!-- <ul class="crowns">
             <li><img class="crownIcon" src="img/crownsmall.png"></li>
@@ -37,12 +35,16 @@
             <li><img class="crownIcon" src="img/crownsmall.png"></li>
         </ul> -->
         <div class="movesAndBtn">
-        <p id="move">Moves:</p> <span id="moves">0</span> <br> <br>
+        <p id="move">Moves:</p> <span id="moves">0</span> 
             <div class="resetButton">
                 <button id="resetBtn">Reset Game</button>
             </div> 
-            </div><br> 
+            </div><br><br>
     </section>
+    <p id="figcaption">Hit play to feel like one of the OG's from the OC while you find 👏 that 👏 housewife!</p id="figcaption"> 
+    <figure>
+        <audio controls id="audio" src="audio/RHOC.mp3"></audio>
+    </figure><br>
 </div>
 <!-- using span instead of div because it's an inline element -->
 <div class="gameBoard" id="gameBoard">

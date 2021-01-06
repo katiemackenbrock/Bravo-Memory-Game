@@ -27,18 +27,19 @@ body {
 .container {
     width: 30%;
     height: 13%;
-    /* display: flex; */
+    /* display: flex;
+    justify-content: center; */
 }
 
 
 header {
-    margin-top: 100px;
-    margin-left: 110px;
+    margin-top: 85px;
+    margin-left: 85px;
     text-align: center;
 }
 
 .headerImg {
-    width: 250px;
+    width: 300px;
     height: 150px;
 }
 
@@ -46,6 +47,8 @@ h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
+    font-style: bold;
+    width: 100%;
 }
 
 p {
@@ -56,7 +59,10 @@ p {
 
 p.instruct {
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 2.5vh;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    width: 100%;
 }
 
 .lu {
@@ -69,12 +75,14 @@ figcaption {
 
 #move {
     font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
     /* display: flex;
     flex: 2; */
 }
 
 #moves {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 /* #move #moves {
@@ -82,22 +90,15 @@ figcaption {
 } */
 
 /* .scoring  */
-
 .movesAndBtn {
     /* display: inline-block; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     justify-content: space-between;
+    align-items: center;
     margin-left: 120px;
 }
-
-/* .resetButton {
-    height: 25px;
-    width: 50px;
-    display: flex;
-    justify-items: center;
-} */
 
 #resetBtn {
     width: 120px;
@@ -220,10 +221,14 @@ figcaption {
 }
 
 figure {
-    margin: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
 }
 
-figcaption {
+#figcaption {
     font-family: 'Poppins', sans-serif;
     font-style: italic;
+    margin-left: 90px;
 }
